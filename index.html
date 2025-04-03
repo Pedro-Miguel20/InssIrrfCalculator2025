@@ -1,0 +1,32 @@
+<html id="teste">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <title>Calculadora de Salario líquido</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+  <div class="center">
+    
+    <div class="end">
+      
+      <i class="bi-brightness-high-fill icon" id="toggledark" style=" font-size: 30px; top: -5px; cursor: pointer;"></i></div>
+    <div class="salario_input">
+      <h1 style="margin: 10px 0px 0px 0px;">Calculadora de Salario líquido</h1>
+      <label for="salario">Seu salário:</label>
+      <input type="currency" id="valor" style="width: 100%; font-size: 15px;" onkeyup="calculatesal()" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency">
+    </div>
+    <button id="calculate" onclick="calculateSalary()">Calcular</button>
+    <div id="results">
+      <p>Valor bruto: <span id="bruto">
+      <p>Valor INSS: <span id="inss">
+      <p>Valor dedução INSS: <span id="deducaoInss">
+      <p>Valor IRRF: <span id="deducaoIr">
+      <p>Valor líquido: <span id="liquido">
+    </div>
+  </div>
+</body>
