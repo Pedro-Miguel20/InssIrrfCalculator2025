@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+:root {
+  color: #ffffff;
+  font-family: 'Jaldi', sans-serif;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+}
+
+body{
+  margin: 0;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #0f1c2e;
+  height: 100svh;
+}
+
+.salario_input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.5em;
+  font-size: 0.9em;
+}
+
+input,
+button {
+  padding: 0.8em;
+    box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background: #374357;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+  display: block;
+  cursor: pointer;
+}
+
+button:hover, input:hover {
+  background: #3d5a80;
+  
+}
+
+input:focus{
+  box-shadow:0 0 3px 2px #cee8ff;
+}
+
+button:active{
+  box-shadow: inset 0 0 10px #1f2b3e;
+}
+
+#results{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #374357;
+    margin: 1em;
+  padding: 15px 0px;
+    border-radius: 0.5em;
+  width: clamp(125px, 90%, 305px);
+  margin: 10px;
+}
+
+p{
+margin: 5px 10px 5px;
+    border-bottom: 1px solid #cee8ff;
+    width: -webkit-fill-available;
+  text-align: initial;
+      font-size: 21px;
+}
+
+.lightmode{
+    right: 0;
+}
+
+.end{
+  display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    position: relative;
+    right: 20px;
+}
+
+#salario::placeholder{
+  color: #ffffffb0;
+}
+
+#menu{
+  position: absolute;
+		loading="lazy" width: 30%;
+		margin: 0; padding: 0;
+		float: left;
+}
+
+#menu ul li {
+		margin: 0; padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		}
+
+#menu a:link {
+		background: #F5F5F5;
+		color: #666;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 8px;
+		display: block;
+		}
+
+
+#button{
+  position:absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#menu a:hover {
+		background: #E5F0FF;
+		color: #039;
+		}
+
+#inss, #liquido, #deducaoIr, #bruto, #deducaoInss{
+filter: opacity(0);
+transition: all 0.5s ease;
+}
